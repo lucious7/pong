@@ -57,7 +57,7 @@ Game.prototype.handleCollision = function() {
 	if(player){
 		paddleSound.play();
 		this.ball.speed.x = -this.ball.speed.x;
-		this.ball.speed.y = -(this.ball.speed.y/20) * (player.pos.y + player.height/2 - this.ball.pos.y) * 2;
+		// this.ball.speed.y = -(this.ball.speed.y/20) * (player.pos.y + player.height/2 - this.ball.pos.y) * 2;
 	} else if(this.ball.pos.x < 0){
 		pointSound.play();
 		this.playerTwoScore++;
